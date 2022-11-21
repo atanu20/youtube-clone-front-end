@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', sans-serif;
+}
+.tag span{
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  color:red;
+}
+.homv .card{
+  cursor: pointer;
+}
+.bbb .card{
+  cursor: pointer;
+}
+.right-side .card{
+  cursor: pointer;
+}
+.btn{
+  padding: 7px 25px;
+  border-radius: 0;
+  border: none !important;
+}
+.alltag{
+  padding: 10px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.alltag .btn{
+  margin: 5px;
+  border-radius: 30px;
+}
+.home{
+  width: 100%;
+  padding: 50px 0;
+  background-color: ghostwhite;
+}
+.history{
+  width: 100%;
+  padding: 50px 0;
+  background-color: ghostwhite;
+}
+.home .card{
+  border: none !important;
+  box-shadow: 0 1px 1px rgb(168, 229, 240);
+}
+.youtube-thumb{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.channel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+.channel h4{
+  font-weight: 500 !important;
+}
+.channel-img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.home a{
+  color: #000;
+}
+.home a:hover{
+  text-decoration: none;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding-top: 50px;
+  color: #000000;
+  margin: auto;
+
+}
+.pagination a{
+  padding:5px 8px;
+  margin: 10px;
+  border: 2px solid #000000;
+  color: #000000 !important;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  
+}
+.pagination a:hover{
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #000000;
+}
+.activebutton a{
+  background-color: #000000;
+  color: #fff !important;
+}
+.history .card{
+  width: 100%;
+  /* height: 200px; */
+  height: 230px;
+  border: none !important;
+  box-shadow: 0 1px 1px rgb(168, 229, 240);
+  display: flex;
+ 
+  flex-direction: row;
+  padding: 10px;
+  
+}
+.hisimg{
+  width: 150px;
+  height: 150px;
+}
+.his-det
+{
+  padding: 15px;
+}
+.history a{
+  color: #000;
+}
+.history a:hover{
+  color: #000;
+  text-decoration: none;
+}
+.details{
+  width: 100%;
+  padding: 50px 0;
+  background-color: ghostwhite;
+}
+.details .card{
+  border: none !important;
+  box-shadow: 0 1px 1px rgb(168, 229, 240);
+}
+.vimg{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.lef{
+  display: flex;
+}
+.righ{
+  display: flex;
+}
+.fa-heart-o{
+  font-size: 25px;
+  
+  cursor: pointer;
+}
+.fa-heart-o:hover{
+ text-shadow:0px 0px 5px crimson;
+  color: crimson;
+}
+.fa-heart{
+  font-size: 25px;
+  color: crimson;
+}
+.fa-commenting{
+  font-size: 25px;
+  color: rgb(4, 89, 116);
+  cursor: pointer;
+}
+.fa-eye{
+  font-size: 25px;
+  color: rgb(116, 4, 73);
+  
+}
+.fa-share-alt{
+  font-size: 25px;
+  color: rgb(4, 89, 116);
+  cursor: pointer;
+}
+.video-det{
+  display: flex;
+  justify-content: space-between;
+
+}
+.title-bo{
+  padding: 15px;
+  background-color: aliceblue;
+  display: flex;
+ justify-content: space-between;
+  flex-direction: row;
+}
+.drop{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.allmsg{
+  padding: 15px;
+  background-color: ghostwhite;
+}
+.msgg{
+  display: flex;
+
+}
+.msgbox{
+  padding: 5px;
+}
+.msgg h5{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.msgbox p{
+ 
+  padding-left: 10px;
+}
+.addmsg{
+  margin-top: 20px;
+}
+.addmsg .form-control{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+.addmsg .form-control:focus{
+    
+  box-shadow: none;
+    
+}
+.recv{
+  display: flex;
+}
+.recimg{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+.right-side a{
+  color: #000;
+}
+.right-side a:hover{
+  text-decoration: none ;
+}
+.register{
+  padding: 150px 0;
+  background-color: ghostwhite;
+  height: 100vh;
+}
+.register .card{
+  padding: 15px;
+  border: none !important;
+  box-shadow: 0 5px 5px rgb(152, 238, 253);
+}
+
+.login{
+  padding: 150px 0;
+  background-color: ghostwhite;
+  height: 100vh;
+}
+.login .card{
+  padding: 15px;
+  border: none !important;
+  box-shadow: 0 5px 5px gainsboro;
+}
+.login .form-control {
+  border:2px solid rgb(16, 92, 122) !important;
+  
+}
+.login .form-control:focus , .register .form-control:focus 
+  {
+    
+  box-shadow: none;
+    
+}
+.register .form-control {
+  border:2px solid rgb(34, 125, 161) !important;
+  
+}
+.regimg , .logimg{
+  width: 250px;
+  height: 350px;
+}
+.register a{
+  color: #000;
+}
+.login a{
+  color: #000;
+}
+
+
+
+
+/* dashboard  */
+.dashboard{
+  padding: 75px 0;
+  width: 100%;
+
+  background-color: ghostwhite;
+}
+.dashboard .card{
+  border: none !important;
+  box-shadow: 0 5px 5px gainsboro;
+}
+.detb{
+  display: flex;
+  justify-content: space-between;
+}
+.addvideo{
+  padding: 75px 0;
+  width: 100%;
+height: calc(100vh - 70px);
+  background-color: ghostwhite;
+}
+.input-tags {
+  width: 100%;
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.label-info {
+  background-color: #5bc0de;
+  padding: 3px;
+}
+.proimgg{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.vmsgg{
+  width: 100%;
+  padding: 50px 0;
+  background-color: ghostwhite;
+}
+.vmsgg .card{
+  width: 100%;
+  
+  border: none !important;
+  box-shadow: 0 5px 5px gainsboro;
+  padding: 15px;
+}
+.msgf{
+  display: flex;
+  
+}
+.error{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: ghostwhite;
+  height: 100vh;
+}
+.error h1{
+  font-size: 60px ;
+  font-weight: 700;
+  text-shadow:0px 0px 5px rgb(226, 131, 147);
+}
