@@ -12,7 +12,7 @@ const Dashboard = () => {
   const timeout = useRef(null);
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },
@@ -37,7 +37,7 @@ const Dashboard = () => {
 
   const getdata = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/getvideo/${YoutubeUserId}`
+      `https://youtube-clone-node.onrender.com/getvideo/${YoutubeUserId}`
     );
     // console.log(res.data)
     if (res.data.length) {
@@ -51,7 +51,7 @@ const Dashboard = () => {
 
   const checktotalsub = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/getmychannel/${YoutubeUserId}`
+      `https://youtube-clone-node.onrender.com/getmychannel/${YoutubeUserId}`
     );
 
     if (res.data) {

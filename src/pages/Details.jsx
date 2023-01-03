@@ -24,21 +24,21 @@ const Details = () => {
 
   const getidvideo = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/getidvideo/${id}`
+      `https://youtube-clone-node.onrender.com/getidvideo/${id}`
     );
     setIDVIDEO(res.data);
   };
 
   const checksub = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/getidvideo/${id}`
+      `https://youtube-clone-node.onrender.com/getidvideo/${id}`
     );
     const data = {
       channel: res.data[0].channel,
       uid: YoutubeUserId,
     };
     const ress = await axios.post(
-      `https://youtube-clone-back-end-production.up.railway.app/checksubscribe`,
+      `https://youtube-clone-node.onrender.com/checksubscribe`,
       data
     );
     if (ress.data.status) {
@@ -49,13 +49,13 @@ const Details = () => {
   };
 
   const checklike = async () => {
-    // const res=await axios.get(`https://youtube-clone-back-end-production.up.railway.app/getidvideo/${id}`)
+    // const res=await axios.get(`https://youtube-clone-node.onrender.com/getidvideo/${id}`)
     const data = {
       vid: id,
       uid: YoutubeUserId,
     };
     const ress = await axios.post(
-      `https://youtube-clone-back-end-production.up.railway.app/checklike`,
+      `https://youtube-clone-node.onrender.com/checklike`,
       data
     );
     if (ress.data.status) {
@@ -67,13 +67,13 @@ const Details = () => {
 
   const checktotalsub = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/getidvideo/${id}`
+      `https://youtube-clone-node.onrender.com/getidvideo/${id}`
     );
     const data = {
       channel: res.data[0].channel,
     };
     const ress = await axios.post(
-      `https://youtube-clone-back-end-production.up.railway.app/checktotalsub`,
+      `https://youtube-clone-node.onrender.com/checktotalsub`,
       data
     );
     if (ress.data) {
@@ -83,7 +83,7 @@ const Details = () => {
 
   const getallvideo = async () => {
     const res = await axios.get(
-      'https://youtube-clone-back-end-production.up.railway.app/getallvideo'
+      'https://youtube-clone-node.onrender.com/getallvideo'
     );
 
     setAllVIDEO(res.data);
@@ -127,7 +127,7 @@ const Details = () => {
       userid: YoutubeUserId,
     };
     const res = await axios.post(
-      'https://youtube-clone-back-end-production.up.railway.app/subscribe',
+      'https://youtube-clone-node.onrender.com/subscribe',
       data
     );
     checksub();
@@ -145,12 +145,12 @@ const Details = () => {
     };
 
     const result = await axios.post(
-      `https://youtube-clone-back-end-production.up.railway.app/savelike`,
+      `https://youtube-clone-node.onrender.com/savelike`,
       dataata
     );
 
     const res = await axios.post(
-      'https://youtube-clone-back-end-production.up.railway.app/dolike',
+      'https://youtube-clone-node.onrender.com/dolike',
       data
     );
     getidvideo();
@@ -169,7 +169,7 @@ const Details = () => {
 
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },
@@ -198,12 +198,12 @@ const Details = () => {
       uid: YoutubeUserId,
     };
     const result = await axios.post(
-      `https://youtube-clone-back-end-production.up.railway.app/savehistory`,
+      `https://youtube-clone-node.onrender.com/savehistory`,
       data
     );
     // console.log(result.data)
     await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/postidviews/${id}`
+      `https://youtube-clone-node.onrender.com/postidviews/${id}`
     );
 
     his.push(`/video/${id}`);

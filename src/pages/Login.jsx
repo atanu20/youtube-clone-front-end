@@ -13,7 +13,7 @@ const Login = () => {
   const timeout = useRef(null);
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },
@@ -44,7 +44,7 @@ const Login = () => {
       password,
     };
     const res = await axios.post(
-      'https://youtube-clone-back-end-production.up.railway.app/login',
+      'https://youtube-clone-node.onrender.com/login',
       data
     );
     // console.log(res.data)

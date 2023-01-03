@@ -7,7 +7,7 @@ const Message = ({ uid, videoid }) => {
 
   const getmsg = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/mymsgdata/${videoid}`
+      `https://youtube-clone-node.onrender.com/mymsgdata/${videoid}`
     );
     if (res.data.length) {
       setALLMsg(res.data);
@@ -20,7 +20,7 @@ const Message = ({ uid, videoid }) => {
     e.preventDefault();
 
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/myalldata/${uid}`
+      `https://youtube-clone-node.onrender.com/myalldata/${uid}`
     );
     const data = {
       name: res.data.name,
@@ -30,7 +30,7 @@ const Message = ({ uid, videoid }) => {
       usid: uid,
     };
     const ress = await axios.post(
-      `https://youtube-clone-back-end-production.up.railway.app/postmsg`,
+      `https://youtube-clone-node.onrender.com/postmsg`,
       data
     );
     if (ress.data.submit) {

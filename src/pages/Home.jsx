@@ -21,7 +21,7 @@ const Home = () => {
   };
   const getallvideo = async () => {
     const res = await axios.get(
-      'https://youtube-clone-back-end-production.up.railway.app/getallvideo'
+      'https://youtube-clone-node.onrender.com/getallvideo'
     );
     // console.log(res.data)
     setAllVIDEO(res.data);
@@ -34,7 +34,7 @@ const Home = () => {
   const timeout = useRef(null);
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },

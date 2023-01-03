@@ -14,7 +14,7 @@ const AddVideo = () => {
 
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },
@@ -39,7 +39,7 @@ const AddVideo = () => {
 
   const getchannel = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/profiledata/${YoutubeUserId}`
+      `https://youtube-clone-node.onrender.com/profiledata/${YoutubeUserId}`
     );
     if (res.data.length) {
       setChannelName(res.data[0].channel);
@@ -73,7 +73,7 @@ const AddVideo = () => {
     };
     // console.log(data)
     const ress = await axios.post(
-      'https://youtube-clone-back-end-production.up.railway.app/addvideo',
+      'https://youtube-clone-node.onrender.com/addvideo',
       data
     );
     if (ress.data) {

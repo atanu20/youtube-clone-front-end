@@ -11,7 +11,7 @@ const Search = () => {
   let vall = text.replaceAll('+', ' ');
   const getvideo = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/search/${vall}`
+      `https://youtube-clone-node.onrender.com/search/${vall}`
     );
     setAllvideo(res.data);
   };
@@ -21,7 +21,7 @@ const Search = () => {
 
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },

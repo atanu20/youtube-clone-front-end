@@ -14,7 +14,7 @@ const Register = () => {
   const timeout = useRef(null);
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },
@@ -45,7 +45,7 @@ const Register = () => {
       password,
     };
     const ress = await axios.post(
-      'https://youtube-clone-back-end-production.up.railway.app/register',
+      'https://youtube-clone-node.onrender.com/register',
       data
     );
     // console.log(ress.data)

@@ -10,12 +10,12 @@ const HistoryVideo = ({ channel, thumbimg, title, vid, date, tagg }) => {
       uid: YoutubeUserId,
     };
     const result = await axios.post(
-      `https://youtube-clone-back-end-production.up.railway.app/savehistory`,
+      `https://youtube-clone-node.onrender.com/savehistory`,
       data
     );
     // console.log(result.data)
     await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/postidviews/${id}`
+      `https://youtube-clone-node.onrender.com/postidviews/${id}`
     );
 
     his.push(`/video/${id}`);

@@ -13,7 +13,7 @@ const History = () => {
   const timeout = useRef(null);
   const getvideo = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/gethistory/${YoutubeUserId}`
+      `https://youtube-clone-node.onrender.com/gethistory/${YoutubeUserId}`
     );
     setHisvideo(res.data.reverse());
   };
@@ -32,7 +32,7 @@ const History = () => {
 
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },

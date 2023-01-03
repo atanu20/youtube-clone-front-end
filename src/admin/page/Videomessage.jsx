@@ -10,7 +10,7 @@ const Videomessage = () => {
   const timeout = useRef(null);
   const checkAuth = () => {
     axios
-      .get('https://youtube-clone-back-end-production.up.railway.app/isAuth', {
+      .get('https://youtube-clone-node.onrender.com/isAuth', {
         headers: {
           'x-access-token': localStorage.getItem('Youtubetoken'),
         },
@@ -35,7 +35,7 @@ const Videomessage = () => {
 
   const getmsg = async () => {
     const res = await axios.get(
-      `https://youtube-clone-back-end-production.up.railway.app/videomsg/${id}`
+      `https://youtube-clone-node.onrender.com/videomsg/${id}`
     );
     setAllmsg(res.data.reverse());
     // console.log(res.data.reverse())
